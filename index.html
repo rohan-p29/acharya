@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="../all.css">
+    <!-- <link rel="stylesheet" href="../all.css"> -->
     <link rel="icon" href="logo.png">
+
     <title>Clubs | Acharya</title>
 </head>
+
 <body>
     <nav class="navlist">
         <ul>
-            <li class="logo"><img src="logo.png" alt="">
+            <li><img class="logo" src="logo.png" alt="">
                 <h4>ACHARYA</h4>
             </li>
             <!--<div class="search-box">
@@ -19,32 +22,42 @@
                 <span class="fa fa-search"></span>
             </div>-->
             <form class="search-form">
-                <input type="text" placeholder="Search">
-                <button>Search</button>
+                <input class="srch" type="text" placeholder="Search">
+                <button class="btn">Search</button>
             </form>
             <li><a href="#">HOME</a></li>
             <li><a href="#">ABOUT</a></li>
-            <li><a href="#">CONTACT US</a></li>
+            <li><a class="contact" href="#">CONTACT US</a></li>
+            <img class="sidebar" src="sidebar.png" alt="">
+            
         </ul>
     </nav>
     <div class="container">
-    
+        <div class="side" >
+
+            awdfaf
+        </div>
+
         <h1>Acharya <br> Where the World Comes to Learn</h1>
         <br>
         <p>Bengaluru's Largest Composite Academy</p>
-    <div class="likha">
-        <p>Ranking among the
-            <span style="font-weight:bold;"> Top colleges in Bangalore, India </span>
-             Acharya was established in 1990. A cerebral destination for national and 
-            international students, we offer prestigious learning experience 
-            and a lavishing 120 acres of campus that attracts students from around the world. There is nothing like the lush greenery and mesmerizing views to soothe your soul!
-            <br>
-            <br> 
-            <u>ACHARYA IS EXACTLY WHAT YOU HAVE WISHED FOR.</u></p>
+        <div class="likha">
+            <p>Ranking among the
+                <span style="font-weight:bold;"> Top colleges in Bangalore, India </span>
+                Acharya was established in 1990. A cerebral destination for national and
+                international students, we offer prestigious learning experience
+                and a lavishing 120 acres of campus that attracts students from around the world. There is nothing like
+                the lush greenery and mesmerizing views to soothe your soul!
+                <br>
+                <br>
+                <u>ACHARYA IS EXACTLY WHAT YOU HAVE WISHED FOR.</u>
+            </p>
+        </div>
+
     </div>
-   
+    <div class="patti">
+        <h2>CLUBS OF ACHARYA</h2>
     </div>
-    <div class="patti"><h2>CLUBS OF ACHARYA</h2></div>
     <div class="content-box">
         <!-- <h2>CLUBS OF ACHARYA</h2> -->
         <div class="row">
@@ -66,8 +79,31 @@
         </div>
     </div>
 
-     <div class="footer">
+    <div class="footer">
         <p>&copy; 2023 Journalist Club. All rights reserved.</p>
     </div>
+    <script src="script.js"></script>
 </body>
+<!-- <script>
+    
+    let sidebar = document.getElementsByClassName("sidebar")[0]
+    let side = document.getElementsByClassName("side")[0]
+   
+    
+
+    sidebar.addEventListener("click", () => {
+        console.log("clicked")
+        if (side.style.right == "-500px") {
+            side.style.right = "0px";
+        }
+        else {
+            side.style.right = "-500px";
+        }
+
+
+    }
+    );
+
+</script> -->
+
 </html>
